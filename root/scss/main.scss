@@ -1,0 +1,13 @@
+
+@import "compass";
+
+//
+// .simple   { @include border-radius(4px, 4px); }
+// .compound { @include border-radius(2px 5px, 3px 6px); }
+// 
+// 
+//
+
+body {
+    background-color : blue;
+}
