@@ -1,3 +1,28 @@
 {
-    "title" : "toto"
+  "title": "{%= name %}",
+  "url": "http://an.url.com",
+  "description": "{%= description %}",
+  "author": "strzelewicz.alexandre@gmail.com <apps.hemca.com>",
+  "ga_id" : "UA-xxx",
+  "fb": {
+    "app_id": "xxx",
+    "type": "website",
+    "img": "img/xx.png"
+  },
+  "scripts": [
+    "lib/angular.min.js",
+    "lib/angular-resource.min.js",
+    "lib/angular-mobile.min.js",
+    "lib/moment.min.js",
+    "lib/modernizr.min.js",
+    "js/routes.js",
+    "js/filters.js",
+    "js/directives/foundation_directives.js",
+    "js/controllers/main_controller.js"
+  ],
+  "css": [
+    "css/foundation/app.css",
+    "css/main.css",
+    "css/font/font-awesome.css"
+  ]
 }

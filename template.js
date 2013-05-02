@@ -26,8 +26,6 @@ exports.template = function(grunt, init, done) {
 	init.prompt('description'),
 	init.prompt('version'),
 	init.prompt('repository'),
-	init.prompt('homepage'),
-	init.prompt('bugs'),
 	init.prompt('licenses'),
 	init.prompt('author_name'),
 	init.prompt('author_email'),
@@ -35,12 +33,6 @@ exports.template = function(grunt, init, done) {
 	init.prompt('node_version', '>= 0.8.0'),
 	init.prompt('main'),
 	init.prompt('npm_test', 'mocha'),
-	{
-		name: 'travis',
-		message: 'Will this project be tested with Travis CI?',
-		default: 'Y/n',
-		warning: 'If selected, you must enable Travis support for this project in https://travis-ci.org/profile'
-	},
 	], function(err, props) {
 		props.keywords = [];
 		

@@ -1,6 +1,21 @@
 
 //-webkit-animation: fontbulger 5s infinite;
 
+@mixin hardware_acceleration_one() {
+   -webkit-transform: translateZ(0);
+   -moz-transform: translateZ(0);
+   -ms-transform: translateZ(0);
+   -o-transform: translateZ(0);
+   transform: translateZ(0);
+}
+
+@mixin hardware_acceleration_two() {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
 @mixin rounded_bottom_left($amount) {
     -moz-border-radius-bottomleft: $amount;
     -webkit-border-radius: 0px 0px 0px $amount;

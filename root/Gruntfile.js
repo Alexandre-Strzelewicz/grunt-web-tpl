@@ -19,10 +19,11 @@ module.exports = function(grunt) {
 	},
 	jade: {
     	    html: {
-    		src: ['jade/**.jade'],
+    		src: ['jade/**/*.jade'],
     		dest: 'app/',
 		options : {
 		    client : false,
+		    basePath : 'jade/',
 		    locals : grunt.file.readJSON('locals.json')
 		}
 	    }
@@ -37,11 +38,11 @@ module.exports = function(grunt) {
 	},
 	watch: {
 	    jade : {
-    		files: ['jade/**/*.jade'],
+    		files: ['jade/**/*.jade', 'locals.json'],
     		tasks: ['jade']
     	    },
 	    scss : {
-		files: ['scss/*/**.scss'],
+		files: ['scss/**/*.scss'],
 		tasks: ['compass:dev']
 	    }
 	}
